@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <base target="_blank" rel="noreferrer">
+        <title>Gavin Atkinson</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Yu-Hsiang Tseng, Sean, personal website">
+        <style>
+            :root {
+                --bg-1-dark: #0A0A0A;
+                --fg-1-dark: #fff;
+                --fg-2-dark: #ffffff88;
+                --fg-3-dark: #ffffff44;
+
+                --bg-1-light: #fff;
+                --fg-1-light: #000;
+                --fg-2-light: #00000099;
+                --fg-3-light: #00000044;
+
+                --bg-1: var(--bg-1-light);
+                --fg-1: var(--fg-1-light);
+                --fg-2: var(--fg-2-light);
+                --fg-3: var(--fg-3-light);
+
+                @media (prefers-color-scheme: dark) {
+                    --bg-1: var(--bg-1-dark);
+                    --fg-1: var(--fg-1-dark);
+                    --fg-2: var(--fg-2-dark);
+                    --fg-3: var(--fg-3-dark);
+                };
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            html, body {
+                background-color: var(--bg-1);
+                color: var(--fg-1);
+                text-rendering: optimizeLegibility;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                backface-visibility: hidden;
+            }
+
+            h1, h2, h3, h4, h5, h6, p, a {
+                font-size: 1em;
+                font-weight: 400;
+            }
+
+            p::selection, a::selection, h3::selection {
+                color: #008cff !important;
+                background-color: #D8ECFC !important;
+            }
+
+            main {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 4em;
+                animation: fadeIn 1.15s cubic-bezier(0.230, 1.000, 0.320, 1.000); animation-delay: 0; animation-fill-mode:backwards;
+            }
+
+            @keyframes fadeIn {
+                0% { opacity: 0; transform: translateY(32px) }
+                100% { opacity: 1; transform: translateY(0) }
+            }
+            section {
+                display: flex;
+                padding: 3em 0;
+                max-width: 52em;
+            }
+            footer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--fg-2);
+                font-size: x-small;                
+            }
+            h3 {
+                width: 14em;
+                flex: none;
+                margin-bottom: 2em;
+                color: var(--fg-2);
+            }
+            p {
+                width: 100%;
+                line-height: 1.6em;
+                color: var(--fg-2)
+            }
+
+            ol {
+                width: 100%;
+                padding: none;
+                margin: none;
+
+            }
+
+            li {
+                list-style-type:none;
+                padding-bottom: 0.75em;
+            }
+
+            a {
+                color: var(--fg-1);
+                text-decoration: none;
+                transition: 150ms color;
+                background-image: linear-gradient(var(--fg-2), var(--fg-2));
+                background-size: 100% 1px;
+                background-position: left bottom;
+                background-repeat: no-repeat;
+                text-shadow: 0.1em 0 var(--bg-1), -0.1em 0 var(--bg-1);
+                background-position: left 1.05em;
+
+            }
+
+            a:hover{
+                color: var(--fg-2)
+            }
+
+            hr {
+                border: none;
+                height: 1px;
+                background-color: var(--fg-3);
+                display: none;
+            }
+
+            @media screen and (max-width: 600px) {
+                main {
+                    gap: 1em;
+                    padding: 2em;
+                }
+                section {
+                    flex-direction: column;
+                }
+                hr {
+                    display: block;
+                }
+            }
+
+            @media (prefers-color-scheme: dark) {
+                p::selection, a::selection, h3::selection {
+                    color: #44abff !important;
+                    background-color: #142b3d !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div style="height: 1px"></div>
+        <main>
+            <section>
+                <h3>Hi, I'm Sean</h3>
+                <ol>
+                    <li><p>A computational linguist now working in University of Tübingen</p></li>                    
+                </ol>
+            </section>
+            <hr/>
+            <section>
+                <h3>Professional work</h3>
+                <ol>
+                    <!-- <li><p><a href="https://opensea.io/collection/family-portraits">Family Portraits</a>, in collaboration with Family and LFE</p></li> -->                
+                </ol>
+            </section>
+            <hr/>
+            <section>
+                <h3>Community service</h3>
+                <ol>
+                
+                </ol>
+            </section>
+            <hr/>
+            <section>
+                <h3>Side project</h3>
+                <ol>
+                </ol>
+            </section>
+        </main>
+        
+
+        <footer>Website design is adapted from &nbsp;
+            <a style="color: var(--fg-2)" href="https://gav.space/">https://gav.space/</a>
+        </footer>
+    </body>
+</html>
